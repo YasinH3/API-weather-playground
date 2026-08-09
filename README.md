@@ -6,8 +6,8 @@ A simple Python project that demonstrates how to fetch current weather data from
 
 This repository contains two small example scripts:
 
-- `main.py` uses the Open-Meteo geocoding and forecast APIs. It asks for a city name and prints the current temperature.
-- `OpenWeather.py` uses the OpenWeatherMap API to fetch weather details for a fixed city.
+- `main.py` uses the Open-Meteo geocoding and forecast APIs. It asks for a city name and prints the current temperature. It is open, without an API key needed.
+- `OpenWeather.py` uses the OpenWeatherMap API to fetch weather details for a fixed city. And it displays more data. It is necessary an API key to run. 
 
 ## Requirements
 
@@ -26,17 +26,15 @@ pip install requests
 
 ## Usage
 
-Run the main example:
-
-```bash
-python main.py
+To run a script (main.py or OpenWeather.py) there are two ways:
+Either the city is an argument:
+``` bash
+python main.py CityName
+python OpenWeather.py CityName
 ```
-
-When prompted, enter a city name such as `London` or `Madrid`.
-
-To run the OpenWeatherMap example:
-
-```bash
+or is promted:
+``` bash
+python main.py 
 python OpenWeather.py
 ```
 
